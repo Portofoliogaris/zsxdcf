@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Bulu Tangkis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="carousel">
+            <img src="b1.jpg" alt="Gambar Bulu Tangkis 1">
+            <img src="b2.jpg" alt="Gambar Bulu Tangkis 2">
+            <img src="b3.jpg" alt="Gambar Bulu Tangkis 3">
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="about.html">Tentang Badminton</a></li>
+            <li><a href="rules.html">Aturan Permainan</a></li>
+            <li><a href="players.html">Pemain Badminton</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Selamat Datang Di Website Badminton</h2>
+        <p>Badminton adalah suatu olahraga raket yang menggunakan raket untuk memukul kok melewati jaring. Meskipun dapat dimainkan dengan tim yang lebih besar, bentuk permainan yang paling umum adalah "tunggal" (dengan satu pemain di setiap sisi) dan "ganda" (dengan dua pemain di setiap sisi) yang saling berlawanan.</p>
+    </section>
+
+    <footer>
+        <p>&copy; DaudDarrell.2024</p>
+    </footer>
+
+    <script>
+        // Script untuk mengatur gambar bergulir
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel img');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % totalImages;
+            images[currentIndex].style.display = 'block';
+        }
+
+        setInterval(showNextImage, 3000); // Ganti gambar setiap 3 detik
+    </script>
+</body>
+</html>

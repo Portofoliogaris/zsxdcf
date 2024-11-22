@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Tinggi header */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: none; /* Sembunyikan gambar secara default */
+}
+
+.carousel img:first-child {
+    display: block; /* Tampilkan gambar pertama */
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Tambahan untuk membuat carousel */
+.carousel img {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
